@@ -1,7 +1,7 @@
 <template>
   <p
     class="pa-2"
-    style="line-height: 1.7 !important; font-family: Noto Sans Mono"
+    style="line-height: 1.7 !important;"
   >
     <slot />
   </p>

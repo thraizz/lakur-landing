@@ -36,11 +36,12 @@
             <v-card
               v-for="(project, i) in Object.values(projects)"
               :key="i"
-              class="mb-2 mx-auto justify-center"
-              color="#0685b3"
+              class="mb-2 mx-auto justify-center text-left"
+              color="#212e3b"
               max-height="300"
             >
               <v-row
+                v-if="$vuetify.breakpoint.smAndUp"
                 dense
               >
                 <v-col
@@ -64,6 +65,15 @@
                   </base-text>
                 </v-col>
               </v-row>
+              <div v-else>
+                <v-img
+                  :src="require('@/assets/mr-karl-LsaEZ3Woqd4-unsplash.jpg')"
+                  height="100%"
+                />
+                <v-card-title to="www.example.com">
+                  {{ project.title }}
+                </v-card-title>
+              </div>
             </v-card>
           </v-container>
         </v-card>
@@ -92,11 +102,13 @@
           img: 'bareos-full-logo.png',
           text: 'projects.bareos',
           href: 'https://github.com/bareos/bareos-webui',
+          title: 'Bareos',
         },
         finau: {
           img: 'finau.png',
           text: 'projects.finau',
           href: 'https://finau.de',
+          title: 'Finaui',
         },
       },
     }),

@@ -8,16 +8,23 @@
     <v-slide-x-transition>
       <v-img
         v-if="showLogo"
-        :src="require('@/assets/logo.png')"
+        :src="require('@/assets/logo.svg')"
         class="shrink"
         contain
         height="50"
+        :width="logoWidth"
       />
     </v-slide-x-transition>
 
     <v-spacer />
-
-    <social-media />
+    <v-slide-x-reverse-transition>
+      <social-media
+        :src="require('@/assets/logo.svg')"
+        class="shrink pl-0"
+        contain
+        height="50"
+      />
+    </v-slide-x-reverse-transition>
   </v-app-bar>
 </template>
 
@@ -33,6 +40,18 @@
       showLogo: false,
       isScrolling: false,
     }),
+    computed: {
+      logoWidth () {
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return '100px'
+          case 'sm': return '400px'
+          case 'md': return '500px'
+          case 'lg': return '600px'
+          case 'xl': return '800px'
+          default: return '200px'
+        }
+      },
+    },
 
     methods: {
       onScroll () {
