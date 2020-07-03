@@ -35,11 +35,9 @@
   }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-$body-font-family: 'Noto Sans';
-$title-font: 'Noto Sans';
+$body-font-family: 'open sans,Arial,sans-serif';
+$title-font: 'Arial';
 .v-application {
    font-family: $body-font-family, sans-serif !important;
     .title {
