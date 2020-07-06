@@ -13,25 +13,25 @@
       color="transparent"
     >
       <v-text-field
-        label="Name"
+        :label="$t('contact.name')"
         solo
         flat
       />
 
       <v-text-field
-        label="Email"
+        :label="$t('contact.email')"
         solo
         flat
       />
 
       <v-text-field
-        label="Subject"
+        :label="$t('contact.subject')"
         solo
         flat
       />
 
       <v-textarea
-        label="Message"
+        :label="$t('contact.message')"
         solo
         flat
       />

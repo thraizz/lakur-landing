@@ -15,7 +15,7 @@
       <v-card
         v-for="(project, i) in Object.values(projects)"
         :key="i"
-        :to="project.href"
+        :href="project.href"
         class="mb-4 mx-auto text-left"
         color="rgb(1, 1, 1, 0.7)"
         max-height="300"

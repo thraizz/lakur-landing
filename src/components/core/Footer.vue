@@ -24,7 +24,10 @@
 </script>
 <style>
 a {
-  text-decoration: underline !important;
+  color: red;
+}
+a.hover {
+  color: blue;
 }
 
 </style>
