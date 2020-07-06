@@ -1,10 +1,8 @@
 <template>
   <div>
-    <welcome />
-
-    <recent-projects />
-
-    <get-in-touch />
+    <welcome :style="{top: '0vh'}" />
+    <recent-projects :style="{top: '100vh'}" />
+    <get-in-touch :style="{top: '200vh'}" />
   </div>
 </template>
 

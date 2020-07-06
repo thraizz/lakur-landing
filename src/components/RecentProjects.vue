@@ -1,101 +1,57 @@
 <template>
-  <section
+  <section-container
     id="recent-projects"
-    class="overflow-hidden justify-center"
+    position="left"
+    image="mr-karl-LsaEZ3Woqd4-unsplash.bace1419.jpg"
   >
-    <v-row
-      no-gutters
-      class="justify-center projects"
-    >
-      <v-col
-        class="justify-center black--text text-center pa-5"
-        cols="12"
-        md="6"
+    <base-heading>
+      {{ $t('recentProjects') }}
+    </base-heading>
+    <template v-for="(text,i) in $t('recentProjectsText').split('+')">
+      <base-text
+        :key="i"
       >
-        <base-heading
-          class="mb-5"
-        >
-          {{ $t('recentProjects') }}
-        </base-heading>
-        <template v-for="(text,i) in $t('recentProjectsText').split('+')">
-          <base-text
-            :key="i"
-            class="ma-0 pa-0"
+        {{ text }}
+      </base-text>
+    </template>
+
+    <div>
+      <v-card
+        v-for="(project, i) in Object.values(projects)"
+        :key="i"
+        class="mb-4 mx-auto text-left"
+        color="rgb(1, 1, 1, 0.7)"
+        max-height="300"
+        max-width="600"
+      >
+        <div :style="{display: 'flex'}">
+          <a
+            class="pa-2"
+            :href="project.href"
           >
-            {{ text }}
-          </base-text>
-        </template>
-
-        <v-card
-          color="#1b1a18"
-          class="text-center"
-          style="display: inline-flex"
-          max-width="600"
-        >
-          <v-container>
-            <v-card
-              v-for="(project, i) in Object.values(projects)"
-              :key="i"
-              class="mb-2 mx-auto justify-center text-left"
-              color="#212e3b"
-              max-height="300"
-            >
-              <v-row
-                v-if="$vuetify.breakpoint.smAndUp"
-                dense
-              >
-                <v-col
-                  md="6"
-                  class="pa-4"
-                >
-                  <a :href="project.href">
-                    <v-img
-                      max-height="250"
-                      max-width="250"
-                      :src="require(`@/assets/${project.img}`)"
-                    />
-                  </a>
-                </v-col>
-                <v-col
-                  md="6"
-                  class="pa-4"
-                >
-                  <base-text v-if="$vuetify.breakpoint.mdAndUp">
-                    {{ $t(project.text) }}
-                  </base-text>
-                </v-col>
-              </v-row>
-              <div v-else>
-                <v-img
-                  :src="require('@/assets/mr-karl-LsaEZ3Woqd4-unsplash.jpg')"
-                  height="100%"
-                />
-                <v-card-title to="www.example.com">
-                  {{ project.title }}
-                </v-card-title>
-              </div>
-            </v-card>
-          </v-container>
-        </v-card>
-      </v-col>
-
-      <v-col
-        class="hidden-sm-and-down"
-        md="6"
-      >
-        <v-img
-          :src="require('@/assets/mr-karl-LsaEZ3Woqd4-unsplash.jpg')"
-          height="100%"
-        />
-      </v-col>
-    </v-row>
-  </section>
+            <v-img
+              max-height="200"
+              max-width="200"
+              :src="require(`@/assets/${project.img}`)"
+            />
+          </a>
+          <v-card-text v-if="$vuetify.breakpoint.mdAndUp">
+            {{ $t(project.text) }}
+          </v-card-text>
+        </div>
+      </v-card>
+    </div>
+  </section-container>
 </template>
 
 <script>
+  import SectionContainer from '@/components/base/SectionContainer.vue'
+
   export default {
     name: 'RecentProjects',
-
+    components: {
+      SectionContainer,
+    },
     data: () => ({
       projects: {
         bareos: {

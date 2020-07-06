@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="finau.svg"
+   viewBox="0 0 500 500"
+   height="500"
+   width="500"
+   id="svg1232"
+   version="1.1">
+  <metadata
+     id="metadata1238">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1236" />
+  <sodipodi:namedview
+     inkscape:current-layer="layer1"
+     inkscape:window-maximized="0"
+     inkscape:window-y="82"
+     inkscape:window-x="18"
+     inkscape:cy="338.21845"
+     inkscape:cx="52.206683"
+     inkscape:zoom="1.2529932"
+     showgrid="false"
+     id="namedview1234"
+     inkscape:window-height="1336"
+     inkscape:window-width="2520"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     style="display:inline"
+     inkscape:label="Image 1"
+     id="layer1"
+     inkscape:groupmode="layer">
+    <rect
+       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
+       id="rect2803-8"
+       width="30.006701"
+       height="106.94817"
+       x="196.08858"
+       y="161.14616" />
+    <rect
+       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
+       id="rect2805-2"
+       width="26.723204"
+       height="81.997665"
+       x="237.24454"
+       y="186.09668" />
+    <rect
+       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
+       id="rect2807-2"
+       width="27.006334"
+       height="105.41557"
+       x="274.83386"
+       y="162.67877" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:1.25;font-family:sans-serif;word-spacing:0px"
+       x="189.90234"
+       y="307.56406"
+       id="text2811-0"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+         sodipodi:role="line"
+         id="tspan2809-9"
+         x="189.90234"
+         y="307.56406">FINAU</tspan></text>
+  </g>
+</svg>

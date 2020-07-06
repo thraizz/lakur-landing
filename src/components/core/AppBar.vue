@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     v-scroll="onScroll"
-    :color="!isScrolling ? 'transparent' : 'white'"
+    :color="!isScrolling ? 'transparent' : 'rgb(174, 215, 233, 0.3)'"
     fixed
     flat
   >
@@ -11,8 +11,6 @@
         :src="require('@/assets/logo.svg')"
         class="shrink"
         contain
-        height="50"
-        :width="logoWidth"
       />
     </v-slide-x-transition>
 
