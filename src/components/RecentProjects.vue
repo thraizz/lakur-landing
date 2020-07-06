@@ -2,23 +2,20 @@
   <section-container
     id="recent-projects"
     position="left"
-    image="mr-karl-LsaEZ3Woqd4-unsplash.bace1419.jpg"
+    image="pawel-czerwinski-arwTpnIUHdM-unsplash.f27608f2.jpg"
   >
-    <base-heading>
+    <base-heading class="mt-8 mb-8">
       {{ $t('recentProjects') }}
     </base-heading>
-    <template v-for="(text,i) in $t('recentProjectsText').split('+')">
-      <base-text
-        :key="i"
-      >
-        {{ text }}
-      </base-text>
-    </template>
+    <base-text>
+      {{ $t('recentProjectsText') }}
+    </base-text>
 
     <div>
       <v-card
         v-for="(project, i) in Object.values(projects)"
         :key="i"
+        :to="project.href"
         class="mb-4 mx-auto text-left"
         color="rgb(1, 1, 1, 0.7)"
         max-height="300"
@@ -28,16 +25,27 @@
           <a
             class="pa-2"
             :href="project.href"
+            height="200px"
+            width="200px"
           >
-            <v-img
-              max-height="200"
-              max-width="200"
-              :src="require(`@/assets/${project.img}`)"
-            />
+            <div
+              v-if="$vuetify.breakpoint.mdAndUp"
+              :style="{display: 'block', height: '200px', width: '200px'}"
+            >
+              <v-img
+                class="center"
+                :src="require(`@/assets/${project.img}`)"
+              />
+            </div>
           </a>
-          <v-card-text v-if="$vuetify.breakpoint.mdAndUp">
-            {{ $t(project.text) }}
-          </v-card-text>
+          <div class="center">
+            <base-subheading tag="h3">
+              {{ project.title }}
+            </base-subheading>
+            <base-text>
+              {{ $t(project.text) }}
+            </base-text>
+          </div>
         </div>
       </v-card>
     </div>
@@ -55,18 +63,25 @@
     data: () => ({
       projects: {
         bareos: {
-          img: 'bareos-full-logo.png',
+          img: 'bareos_logo.svg',
           text: 'projects.bareos',
           href: 'https://github.com/bareos/bareos-webui',
           title: 'Bareos',
         },
         finau: {
-          img: 'finau.png',
+          img: 'finau.svg',
           text: 'projects.finau',
           href: 'https://finau.de',
-          title: 'Finaui',
+          title: 'Finau',
         },
       },
     }),
   }
 </script>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

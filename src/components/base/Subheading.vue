@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="display-1 v-heading mb-3 font-weight-light"
+    :class="this.$vuetify.breakpoint.xsOnly ? 'pa-0 pt-4' : 'pa-2'"
   >
     <slot />
   </component>

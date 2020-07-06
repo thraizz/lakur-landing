@@ -5,10 +5,10 @@
   "services": "Dienstleistungen",
   "aboutMe": "Über mich",
   "skills": "Kompetenzen",
-  "baseText": "Aron Schüler, 21 Jahre alt.+ 4 Jahre Joberfahrung in der Entwicklung.+ Student der Technischen Informatik an der TH Köln.",
+  "baseText": "21 Jahre alt. 4 Jahre Joberfahrung in der Entwicklung. Student der Technischen Informatik an der TH Köln.",
   "baseTextWelcome": "Willkommen auf meiner Website.",
   "recentProjects": "Letzte Projekte",
-  "recentProjectsText": "Hier präsentiere Ich abgeschlossene Projekte.+ Zum aktuellen Zeitpunkt gibt es zwei öffentlich einsichtliche Projekte.",
+  "recentProjectsText": "Hier präsentiere Ich abgeschlossene Projekte. Zum aktuellen Zeitpunkt gibt es zwei öffentlich einsichtliche Projekte.",
   "projects": {
     "bareos": "Bareos, eine Open-Source-Backup- und Wiederherstellungslösung. \nHier habe ich an der Weboberfläche und der S3-Implementierung gearbeitet.",
     "finau": "Ein Tool zum Erstellen von Angeboten und Rechnungen, entwickelt von mir allein. Die App ist in Vue geschrieben, mit Vuetify designed und das Backend ein Firebase Service."

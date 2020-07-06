@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="finau.svg"
-   viewBox="0 0 500 500"
-   height="500"
-   width="500"
+   version="1.1"
    id="svg1232"
-   version="1.1">
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   sodipodi:docname="finau.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata1238">
     <rdf:RDF>
@@ -29,61 +29,75 @@
   <defs
      id="defs1236" />
   <sodipodi:namedview
-     inkscape:current-layer="layer1"
-     inkscape:window-maximized="0"
-     inkscape:window-y="82"
-     inkscape:window-x="18"
-     inkscape:cy="338.21845"
-     inkscape:cx="52.206683"
-     inkscape:zoom="1.2529932"
-     showgrid="false"
-     id="namedview1234"
-     inkscape:window-height="1336"
-     inkscape:window-width="2520"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1555"
+     inkscape:window-height="1338"
+     id="namedview1234"
+     showgrid="false"
+     inkscape:zoom="0.6264966"
+     inkscape:cx="443.67741"
+     inkscape:cy="378.40539"
+     inkscape:window-x="983"
+     inkscape:window-y="82"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <g
-     style="display:inline"
-     inkscape:label="Image 1"
+     inkscape:groupmode="layer"
      id="layer1"
-     inkscape:groupmode="layer">
-    <rect
-       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
-       id="rect2803-8"
-       width="30.006701"
-       height="106.94817"
-       x="196.08858"
-       y="161.14616" />
-    <rect
-       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
-       id="rect2805-2"
-       width="26.723204"
-       height="81.997665"
-       x="237.24454"
-       y="186.09668" />
-    <rect
-       style="fill:#93ccae;fill-rule:evenodd;stroke-width:1.00157"
-       id="rect2807-2"
-       width="27.006334"
-       height="105.41557"
-       x="274.83386"
-       y="162.67877" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;line-height:1.25;font-family:sans-serif;word-spacing:0px"
-       x="189.90234"
-       y="307.56406"
-       id="text2811-0"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
-         sodipodi:role="line"
-         id="tspan2809-9"
-         x="189.90234"
-         y="307.56406">FINAU</tspan></text>
+     inkscape:label="Image 1"
+     style="display:inline">
+    <g
+       transform="translate(-18.680641,-0.61691284)"
+       id="g886">
+      <rect
+         style="fill:#93ccae;fill-rule:evenodd;stroke-width:3.30177"
+         id="rect2803-8"
+         width="98.919823"
+         height="352.56442"
+         x="144.62944"
+         y="74.334702" />
+      <rect
+         style="fill:#93ccae;fill-rule:evenodd;stroke-width:2.38618"
+         id="rect2805-2"
+         width="88.095482"
+         height="141.18259"
+         x="170.43018"
+         y="-392.73184"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:131.864px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:3.29659"
+         x="124.23595"
+         y="557.01465"
+         id="text2811-0"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';stroke-width:3.29659"
+           sodipodi:role="line"
+           id="tspan2809-9"
+           x="124.23595"
+           y="557.01465" /></text>
+      <rect
+         y="-392.73184"
+         x="74.334702"
+         height="141.18259"
+         width="88.095482"
+         id="rect2805-2-3"
+         style="display:inline;fill:#93ccae;fill-rule:evenodd;stroke-width:2.38618"
+         transform="rotate(90)" />
+    </g>
   </g>
 </svg>

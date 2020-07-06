@@ -4,10 +4,10 @@
     class="overflow-hidden"
     color="white"
   >
-    <v-row>
+    <v-row v-if="!$vuetify.breakpoint.xsOnly">
       <div class="image-container">
         <div
-          class="parallax pl-5 pr-5"
+          class="parallax"
           :style="{ 'background-image': filename }"
         >
           <div :class="box">
@@ -18,6 +18,17 @@
         </div>
       </div>
     </v-row>
+    <div
+      v-else
+      class="parallax"
+      :style="{ 'background-image': parallaxStyle }"
+    >
+      <div
+        :class="text + ' pa-2'"
+      >
+        <slot />
+      </div>
+    </div>
   </section>
 </template>
 
@@ -43,6 +54,9 @@
           return 'lefttext'
         }
         return 'righttext'
+      },
+      parallaxStyle () {
+        return 'linear-gradient(to bottom, rgba(30, 30, 30, 0.6), rgba(255, 215, 233, 0.05)), url(/img/' + this.image + ')'
       },
     },
   }
@@ -91,5 +105,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 </style>

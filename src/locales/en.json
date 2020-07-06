@@ -5,10 +5,10 @@
   "services": "Services",
   "aboutMe": "About Me",
   "skills": "Skills",
-  "baseText": "21 year old student.+ 4 years+ hands-on industry experience.+ Studying Computer Science & Engineering @ Technical University Cologne.",
+  "baseText": "21 year old student. 4 years hands-on industry experience. Studying Computer Science & Engineering @ Technical University Cologne.",
   "baseTextWelcome": "Welcome to my homepage.",
   "recentProjects": "Recent Projects",
-  "recentProjectsText": "Here, I will present done projects and link them.+ For now, there are only two items I can publicly present.",
+  "recentProjectsText": "Here, I will present done projects and link them. For now, there are only two items I can publicly present.",
   "projects": {
     "bareos": "Bareos, an open-source backup and recovery solution. Here, I worked on the web interface and S3 implementation.",
     "finau": "An invoice management tool developed by me. The app is written in Vue, styled with vuetify and the backend is a Firebase Service."

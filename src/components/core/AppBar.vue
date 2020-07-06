@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     v-scroll="onScroll"
-    :color="!isScrolling ? 'transparent' : 'rgb(174, 215, 233, 0.3)'"
+    color="transparent"
     fixed
     flat
   >
@@ -17,6 +17,7 @@
     <v-spacer />
     <v-slide-x-reverse-transition>
       <social-media
+        v-if="isScrolling || !$vuetify.breakpoint.xsOnly"
         :src="require('@/assets/logo.svg')"
         class="shrink pl-0"
         contain
@@ -55,7 +56,7 @@
       onScroll () {
         const offset = window.pageYOffset
         this.isScrolling = offset > 50
-        this.showLogo = offset > 200
+        this.showLogo = offset > 200 && !this.$vuetify.breakpoint.xsOnly
       },
     },
   }

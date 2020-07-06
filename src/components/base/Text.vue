@@ -1,6 +1,6 @@
 <template>
   <p
-    class="pa-2"
+    :class="this.$vuetify.breakpoint.xsOnly ? 'pa-0' : 'pl-2 pr-2'"
     style="line-height: 1.7 !important;"
   >
     <slot />
