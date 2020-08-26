@@ -64,7 +64,7 @@
     },
     methods: {
       sendForm () {
-        axios.post('https://lakur.tech:6425/contact', { params: { name: this.name, subject: this.subject, content: this.content } })
+        axios.post('https://lakur.tech:6435/contact', { params: { name: this.name, email: this.email, subject: this.subject, content: this.content } })
       },
     },
   }
