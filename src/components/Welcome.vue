@@ -3,7 +3,7 @@
     id="welcome"
     class="overflow-hidden"
     color="white"
-    image="pawel-czerwinski-zfKL3GEICzc-unsplash.63f506ae.jpg"
+    image="5.jpg"
     position="right"
   >
     <base-heading class="mt-8 mb-8">
@@ -12,14 +12,16 @@
     <h3 class="pa-2 ma-0">
       {{ $t('aboutMe') }}:
     </h3>
-    <template v-for="(sentence, i) in $t('baseText').split('+')">
-      <base-text
-        :key="i"
-        class="ma-0 pr-4 pl-4"
-      >
-        {{ sentence }}
-      </base-text>
-    </template>
+    <list>
+      <template v-for="(sentence, i) in $t('baseText')">
+        <base-text
+          :key="i"
+          left
+        >
+          {{ sentence }}
+        </base-text>
+      </template>
+    </list>
     <v-btn
       icon
       absolute

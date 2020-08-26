@@ -10,24 +10,17 @@
       <impressum />
     </v-dialog>
     <v-row
+      class="ml-6 mr-6 mt-0 mb-0 pb-0 pt-0"
       align="center"
       justify="center"
     >
-      <v-col
-        class="ml-12"
-        cols="7"
-      >
+      <v-col>
         <base-text>
           Graphics by <a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski</a> on <a href="https://unsplash.com/">Unsplash</a>.
         </base-text>
       </v-col>
-    </v-row>
-    <v-row
-      align="center"
-      justify="center"
-    >
+      <v-spacer />
       <v-col
-        cols="3"
         class="mr-4"
       >
         <base-text>
@@ -37,10 +30,7 @@
           >Datenschutz</a>
         </base-text>
       </v-col>
-      <v-col
-        cols="3"
-        class="mr-12"
-      >
+      <v-col>
         <base-text>
           <a
             :style="{'text-decoration': 'underline'}"

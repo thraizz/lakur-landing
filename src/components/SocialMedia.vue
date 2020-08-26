@@ -3,11 +3,10 @@
     <v-btn
       v-for="(item, i) in items.slice(0, large ? items.length : 4)"
       :key="i"
-      fab
+      :ref="item.href"
+      small
+      icon
       class="ma-2"
-      color="info"
-      :small="!large"
-      :href="item.href"
     >
       <v-icon
         dark

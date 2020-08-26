@@ -7,21 +7,16 @@
   >
     <v-slide-x-transition>
       <v-img
-        v-if="showLogo"
+        v-if="!showLogo && $vuetify.breakpoint.mdAndUp"
         :src="require('@/assets/logo.svg')"
         class="shrink"
-        contain
       />
     </v-slide-x-transition>
 
     <v-spacer />
     <v-slide-x-reverse-transition>
       <social-media
-        v-if="isScrolling || !$vuetify.breakpoint.xsOnly"
-        :src="require('@/assets/logo.svg')"
-        class="shrink pl-0"
-        contain
-        height="50"
+        v-show="isScrolling || !$vuetify.breakpoint.xsOnly"
       />
     </v-slide-x-reverse-transition>
   </v-app-bar>
@@ -55,7 +50,7 @@
     methods: {
       onScroll () {
         const offset = window.pageYOffset
-        this.isScrolling = offset > 50
+        this.isScrolling = offset > 200
         this.showLogo = offset > 200 && !this.$vuetify.breakpoint.xsOnly
       },
     },
