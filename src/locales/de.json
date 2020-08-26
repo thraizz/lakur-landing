@@ -6,7 +6,7 @@
   "aboutMe": "Über mich",
   "skills": "Kompetenzen",
   "baseText": "21 Jahre alt. 4 Jahre Joberfahrung in der Entwicklung. Student der Technischen Informatik an der TH Köln. Projekte unter dem Alias Lakur.",
-  "recentProjects": "Letzte Projekte",
+  "recentProjects": "Projekte",
   "recentProjectsText": "Hier präsentiere Ich abgeschlossene Projekte. Zum aktuellen Zeitpunkt gibt es zwei öffentlich einsichtliche Projekte.",
   "projects": {
     "bareos": "Bareos, eine Open-Source-Backup- und Wiederherstellungslösung. \nHier habe ich an der Weboberfläche und der S3-Implementierung gearbeitet.",

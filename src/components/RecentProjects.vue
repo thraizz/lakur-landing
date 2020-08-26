@@ -18,8 +18,7 @@
         :href="project.href"
         class="mb-4 mx-auto text-left"
         color="rgb(1, 1, 1, 0.7)"
-        max-height="300"
-        max-width="600"
+        max-width="600px"
       >
         <div :style="{display: 'flex'}">
           <a
@@ -48,6 +47,25 @@
           </div>
         </div>
       </v-card>
+      <div :style="{display: 'flex'}">
+        <v-card
+          class="ma-4 pa-3 text-left"
+          color="rgb(1, 1, 1, 0.7)"
+          max-width="600px"
+        >
+          <a>
+            <h3>
+              Blog
+            </h3>
+            <p>
+              Meine Gedanken zu verschiedensten IT Themen gibt es nun in meinem
+              <a href="https://blog.lakur.tech/">
+                Blog!
+              </a>
+            </p>
+          </a>
+        </v-card>
+      </div>
     </div>
   </section-container>
 </template>

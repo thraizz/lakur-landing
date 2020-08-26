@@ -13,39 +13,59 @@
       color="transparent"
     >
       <v-text-field
+        v-model="name"
         :label="$t('contact.name')"
         solo
         flat
       />
 
       <v-text-field
+        v-model="email"
         :label="$t('contact.email')"
         solo
         flat
       />
 
       <v-text-field
+        v-model="subject"
         :label="$t('contact.subject')"
         solo
         flat
       />
 
       <v-textarea
+        v-model="content"
         :label="$t('contact.message')"
         solo
         flat
       />
 
-      <base-btn>{{ $t('send') }}</base-btn>
+      <base-btn @click="sendForm">
+        {{ $t('send') }}
+      </base-btn>
     </v-sheet>
   </section-container>
 </template>
 
 <script>
   import SectionContainer from '@/components/base/SectionContainer.vue'
+  import axios from 'axios'
 
   export default {
     name: 'GetInTouch',
     components: { SectionContainer },
+    data: function () {
+      return ({
+        name: '',
+        email: '',
+        subject: '',
+        content: '',
+      })
+    },
+    methods: {
+      sendForm () {
+        axios.post('https://lakur.tech:6425/contact', { params: { name: this.name, subject: this.subject, content: this.content } })
+      },
+    },
   }
 </script>
